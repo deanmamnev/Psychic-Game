@@ -44,6 +44,8 @@ document.onkeyup = function (event) {
         //Get HTML element for displaying wins
         var winsHTML = document.getElementById("wins");
         //set HTML to current wins total
+        alert("Win!")
+
         winsHTML.innerHTML = ("<strong>" + wins + "</strong>")
 
         guessesLeft = 9;
@@ -75,7 +77,8 @@ document.onkeyup = function (event) {
         guessesSoFar = 0;
         var guessesLeftHTML = document.getElementById("guessesLeft");
         guessesLeftHTML.innerHTML = ("<strong>" + guessesLeft + "</strong>")
-
+        var guessesSoFarHTML = document.getElementById("guessesSoFar");
+        guessesSoFarHTML.innerHTML = ("<strong>" + guessesSoFar + "</strong>")
         randomchoice();
 
     }
